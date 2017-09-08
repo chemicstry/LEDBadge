@@ -1,0 +1,215 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text GLabel 6550 2600 2    60   Input ~ 0
+MOSI
+Text GLabel 6550 2700 2    60   Input ~ 0
+MISO
+Text GLabel 6550 2800 2    60   Input ~ 0
+SCK
+Text GLabel 7850 3750 2    60   Input ~ 0
+RESET
+$Comp
+L R R?
+U 1 1 59AD36B5
+P 7750 3550
+F 0 "R?" V 7830 3550 50  0000 C CNN
+F 1 "10K" V 7750 3550 50  0000 C CNN
+F 2 "" V 7680 3550 50  0001 C CNN
+F 3 "" H 7750 3550 50  0001 C CNN
+	1    7750 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L +BATT #PWR?
+U 1 1 59AD3733
+P 7750 3400
+F 0 "#PWR?" H 7750 3250 50  0001 C CNN
+F 1 "+BATT" H 7750 3540 50  0000 C CNN
+F 2 "" H 7750 3400 50  0001 C CNN
+F 3 "" H 7750 3400 50  0001 C CNN
+	1    7750 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L ATMEGA328P-AU U?
+U 1 1 59AD3761
+P 5550 3400
+F 0 "U?" H 4800 4650 50  0000 L BNN
+F 1 "ATMEGA328P-AU" H 5950 2000 50  0000 L BNN
+F 2 "TQFP32" H 5550 3400 50  0001 C CIN
+F 3 "" H 5550 3400 50  0001 C CNN
+	1    5550 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 3750 7850 3750
+Wire Wire Line
+	7750 3700 7750 3750
+Connection ~ 7750 3750
+$Comp
+L +BATT #PWR?
+U 1 1 59AD397F
+P 4550 2200
+F 0 "#PWR?" H 4550 2050 50  0001 C CNN
+F 1 "+BATT" H 4550 2340 50  0000 C CNN
+F 2 "" H 4550 2200 50  0001 C CNN
+F 3 "" H 4550 2200 50  0001 C CNN
+	1    4550 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 2600 4550 2600
+Wire Wire Line
+	4550 2600 4550 2200
+Wire Wire Line
+	4650 2300 4550 2300
+Connection ~ 4550 2300
+Wire Wire Line
+	4650 2400 4550 2400
+Connection ~ 4550 2400
+$Comp
+L GND #PWR?
+U 1 1 59AD39E4
+P 4550 4700
+F 0 "#PWR?" H 4550 4450 50  0001 C CNN
+F 1 "GND" H 4550 4550 50  0000 C CNN
+F 2 "" H 4550 4700 50  0001 C CNN
+F 3 "" H 4550 4700 50  0001 C CNN
+	1    4550 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 4400 4550 4400
+Wire Wire Line
+	4550 4400 4550 4700
+Wire Wire Line
+	4650 4500 4550 4500
+Connection ~ 4550 4500
+Wire Wire Line
+	4650 4600 4550 4600
+Connection ~ 4550 4600
+$Comp
+L CONN_02X03 J?
+U 1 1 59AD3A3C
+P 8550 1700
+F 0 "J?" H 8550 1900 50  0000 C CNN
+F 1 "ICSP" H 8550 1500 50  0000 C CNN
+F 2 "" H 8550 500 50  0001 C CNN
+F 3 "" H 8550 500 50  0001 C CNN
+	1    8550 1700
+	1    0    0    -1  
+$EndComp
+Text GLabel 8800 1700 2    60   Input ~ 0
+MOSI
+Text GLabel 8300 1600 0    60   Input ~ 0
+MISO
+Text GLabel 8300 1700 0    60   Input ~ 0
+SCK
+Text GLabel 8300 1800 0    60   Input ~ 0
+RESET
+$Comp
+L GND #PWR?
+U 1 1 59AD3AF7
+P 8900 1900
+F 0 "#PWR?" H 8900 1650 50  0001 C CNN
+F 1 "GND" H 8900 1750 50  0000 C CNN
+F 2 "" H 8900 1900 50  0001 C CNN
+F 3 "" H 8900 1900 50  0001 C CNN
+	1    8900 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L +BATT #PWR?
+U 1 1 59AD3B11
+P 8900 1500
+F 0 "#PWR?" H 8900 1350 50  0001 C CNN
+F 1 "+BATT" H 8900 1640 50  0000 C CNN
+F 2 "" H 8900 1500 50  0001 C CNN
+F 3 "" H 8900 1500 50  0001 C CNN
+	1    8900 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8800 1600 8900 1600
+Wire Wire Line
+	8900 1600 8900 1500
+Wire Wire Line
+	8800 1800 8900 1800
+Wire Wire Line
+	8900 1800 8900 1900
+$Comp
+L Battery_Cell BT?
+U 1 1 59AD3C09
+P 9800 1750
+F 0 "BT?" H 9900 1850 50  0000 L CNN
+F 1 "Battery_Cell" H 9900 1750 50  0000 L CNN
+F 2 "" V 9800 1810 50  0001 C CNN
+F 3 "" V 9800 1810 50  0001 C CNN
+	1    9800 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L +BATT #PWR?
+U 1 1 59AD3CD0
+P 9800 1550
+F 0 "#PWR?" H 9800 1400 50  0001 C CNN
+F 1 "+BATT" H 9800 1690 50  0000 C CNN
+F 2 "" H 9800 1550 50  0001 C CNN
+F 3 "" H 9800 1550 50  0001 C CNN
+	1    9800 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 59AD3CEC
+P 9800 1850
+F 0 "#PWR?" H 9800 1600 50  0001 C CNN
+F 1 "GND" H 9800 1700 50  0000 C CNN
+F 2 "" H 9800 1850 50  0001 C CNN
+F 3 "" H 9800 1850 50  0001 C CNN
+	1    9800 1850
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
