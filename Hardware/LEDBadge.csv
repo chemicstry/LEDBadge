@@ -1,0 +1,11 @@
+"Id";"Designator";"Package";"Quantity";"Designation";"Supplier and ref";
+1;"D5,D16,D12,D7,D13,D14,D15,D11,D9,D8,D10,D2,D3,D4,D6,D1";"LED_0603";16;"LED";;;
+2;"R1,R2";"R_0603";2;"1K";;;
+3;"R6,R4,R5,R3";"R_0603";4;"180";;;
+4;"REF**,REF**";"MountingHole_5.3mm_M5";2;"MountingHole_5.3mm_M5";;;
+5;"BT1,BT2";"CCR-2008";2;"CR2032";;;
+6;"C1,C2";"C_0805";2;"10uF";;;
+7;"J1";"Pin_Header_Straight_2x03_Pitch2.54mm";1;"ICSP";;;
+8;"SW1";"SW_SPST_SKQG";1;"Btn";;;
+9;"U1";"TQFP-32_7x7mm_Pitch0.8mm";1;"ATMEGA328P-AU";;;
+10;"U2";"NRF24L01-SMD";1;"NRF24L01";;;
